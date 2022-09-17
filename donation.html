@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/0ecea73764.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link type="image/x-icon" href="img/android-chrome-512x512.png" rel="icon">
+    
+    <style>
+        .donate_heading {
+            text-align: center;
+            color: white;
+            margin-top: 0px;
+            background-color: #4c7990;
+            padding: 30px 0px;
+            font-size: 40px;
+        }
+
+        .donation_box1 {
+            width: 100%;
+            height: auto;
+            /* background-color: #555; */
+            display: flex;
+            justify-content: space-evenly;
+            /* flex-direction: column; */
+            align-items: center;
+
+        }
+
+        .donation_boxa {
+            width: 50%;
+            height: 400px;
+            border-color: lightblue;
+            margin-top: 0px;
+            text-align: center;
+        }
+        .donation_box_img{
+            width: 40%;
+            height: auto;
+        }
+
+        @media screen and (max-width: 420px) {
+            .donation_boxa {
+                width: 50%;
+                height: 400px;
+                border-color: lightblue;
+                margin-top: 100px;
+                text-align: center;
+                margin: 35px;
+            }
+
+            .donation_box_head {
+                font-size: 30px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div class="donation_navigation">
+        <!-- mobile nav -->
+        <div class="mobile-container mobile_view">
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+                <a style="padding: 0x;" href="#home" class="active"><span><img style="height:65px; width: 65px; margin: -15px;" src="./img/traverse_logo.png"></span></a>
+                <div id="myLinks">
+                    <a href="index.html">MEDIA</a>
+                    <a href="shop.html">SHOP</a>
+                    <a href="donation.html">DONATION</a>
+                    <a href="index.html">LOCATION</a>
+                    <a href="covid.html">COVID INSTRUCTION</a>
+
+                    <hr>
+                    <a><i class="fa-solid fa-clock"></i> <span>9.00 AM TO 5.OO PM</span></a>
+                    <a class="phoneNo"><i class="fa-solid fa-square-phone"></i> +1324-345-3456</a>
+                    <hr>
+                    <i class="fa-brands fa-2x fa-instagram-square"></i>
+                    <i class="fa-brands fa-2x fa-facebook-square"></i>
+                    <i class="fa-brands fa-2x fa-twitter-square"></i>
+                    <!-- <i class="fa-brands fa-2x fa-google-plus-square"></i> -->
+
+                    <!-- <a href="#news">News</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a> -->
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+            <!-- End smartphone / tablet look -->
+        </div>
+
+        <!-- desktop nav -->
+        <div class="nav desktop_view">
+            <div class="logo"></div>
+            <div class="details ">
+                <div class="time">
+                    <i class="fa-solid fa-clock"></i> <span>9.00 AM TO 5.OO PM</span>
+                </div>
+                <div class="phoneNo"><i class="fa-solid fa-square-phone"></i> +1324-345-3456</div>
+                <div class="socialIcon">
+                    <i class="fa-brands fa-2x fa-instagram-square"></i>
+                    <i class="fa-brands fa-2x fa-facebook-square"></i>
+                    <i class="fa-brands fa-2x fa-twitter-square"></i>
+                    <!-- <i class="fa-brands fa-2x fa-google-plus-square"></i> -->
+
+                </div>
+            </div>
+        </div>
+        <div class="menu desktop_view">
+            <li><a href="index.html">MEDIA</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="donation.html">DONATION</a></li>
+            <li><a href="index.html">LOCATION</a></li>
+            <li><a href="covid.html">COVID INSTRUCTION</a></li>
+        </div>
+
+    </div>
+
+
+    <H2 id="donation" class="donate_heading">DONATE & GIFT</H2>
+   
+
+
+
+
+    <!-- <H2 id="donation" class="donate_heading">CARD</H2> -->
+
+
+    <div class="donation_box">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img class="donate_image" src="img/donation.png" alt="Avatar">
+                </div>
+                <div class="flip-card-back">
+                    <h2 class="gift_heading">DONATION</h2>
+                    <p>more details</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img class="donate_image" src="img/gift_card.jpg" alt="Avatar">
+                </div>
+                <div class="flip-card-back">
+                    <h2 class="gift_heading">GIFT CARD</h2>
+                    <p>more details</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="lastine">
+        <h5>SHOP PRODUCT</h5>
+        <P class="last_p">OPEN 02/02/2022</P>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>

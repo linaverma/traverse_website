@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/0ecea73764.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link type="image/x-icon" href="img/android-chrome-512x512.png" rel="icon">
+    
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div class="covid_navigation">
+        <!-- mobile nav -->
+        <div class="mobile-container mobile_view">
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+                <a style="padding: 0x;" href="#home" class="active"><span><img style="height:65px; width: 65px; margin: -15px;" src="./img/traverse_logo.png"></span></a>
+                <div id="myLinks">
+                    <a href="index.html">MEDIA</a>
+                    <a href="shop.html">SHOP</a>
+                    <a href="donation.html">DONATION</a>
+                    <a href="index.html">LOCATION</a>
+                    <a href="covid.html">COVID INSTRUCTION</a>
+
+                    <hr>
+                    <a><i class="fa-solid fa-clock"></i> <span>9.00 AM TO 5.OO PM</span></a>
+                    <a class="phoneNo"><i class="fa-solid fa-square-phone"></i> +1324-345-3456</a>
+                    <hr>
+                    <i class="fa-brands fa-2x fa-instagram-square"></i>
+                    <i class="fa-brands fa-2x fa-facebook-square"></i>
+                    <i class="fa-brands fa-2x fa-twitter-square"></i>
+                    <!-- <i class="fa-brands fa-2x fa-google-plus-square"></i> -->
+
+                    <!-- <a href="#news">News</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#about">About</a> -->
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+            <!-- End smartphone / tablet look -->
+        </div>
+
+        <!-- desktop nav -->
+        <div class="nav desktop_view">
+            <div class="logo"></div>
+            <div class="details ">
+                <div class="time">
+                    <i class="fa-solid fa-clock"></i> <span>9.00 AM TO 5.OO PM</span>
+                </div>
+                <div class="phoneNo"><i class="fa-solid fa-square-phone"></i> +1324-345-3456</div>
+                <div class="socialIcon">
+                    <i class="fa-brands fa-2x fa-instagram-square"></i>
+                    <i class="fa-brands fa-2x fa-facebook-square"></i>
+                    <i class="fa-brands fa-2x fa-twitter-square"></i>
+                    <!-- <i class="fa-brands fa-2x fa-google-plus-square"></i> -->
+
+                </div>
+            </div>
+        </div>
+        <div class="menu desktop_view">
+            <li><a href="index.html">MEDIA</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="donation.html">DONATION</a></li>
+            <li><a href="index.html">LOCATION</a></li>
+            <li><a href="covid.html">COVID INSTRUCTION</a></li>
+        </div>
+
+    </div>
+    <div class="covid_instruction_details">
+        <div class="covid_instruction">
+            <div class="covid_instruction_box instruction_img"></div>
+            <div class="covid_instruction_box instruction_img1"></div>
+            <div class="covid_instruction_box instruction_img2"></div>
+            <div class="covid_instruction_box instruction_img3"></div>
+        </div>
+        <div class="covid_instruction">
+
+            <div class="covid_instruction_box instruction_img4"></div>
+            <h5 class="covid_head">COVID INSTRUCTION</h5>
+            <div class="covid_instruction_box instruction_img5"></div>
+        </div>
+
+        <div class="covid_instruction">
+
+            <div class="covid_instruction_box instruction_img6"></div>
+            <div class="covid_instruction_box instruction_img7"></div>
+            <div class="covid_instruction_box instruction_img8"></div>
+            <div class="covid_instruction_box instruction_img9"></div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <div class="lastine">
+        <h5>SHOP PRODUCT</h5>
+        <P class="last_p">OPEN 02/02/2022</P>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+</body>
+
+</html>
